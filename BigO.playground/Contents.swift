@@ -100,3 +100,22 @@ func findAllPairs(_ pair: [Int]) {
 }
 print(pairs)
 
+
+// Space Complexity
+// Mark:- O(1) example
+func simpleNumber(number: [Int]) {
+    for _ in 0..<number.count {
+        print("booo")
+    }
+}
+simpleNumber(number: [1,2,3,4,5]) // Space complexity is O(1) because there is no variables in the function which create space complexity
+
+func arrayOfitems(number: [Int]) {
+    var name = [String]()  // New array which create space (data structure creates space complexity)
+    for i in 0..<number.count {
+        name[i] = "Raj"
+    }
+}
+arrayOfitems(number: [5]) // O(n) Space complexity is Additional memory space.
+
+
